@@ -2,9 +2,10 @@ package main
 
 import "fmt"
 
-func testFunction(){
-
+type A struct {
+	IntArr1 []int32
 }
-func  main()  {
-	fmt.Print("I am not calling a test function");
+func main() {
+	a := A{}
+	fmt.Println(a.IntArr1[0])
 }
